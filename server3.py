@@ -31,7 +31,7 @@ from datetime import timedelta, datetime
 from random import normalvariate, random
 from socketserver import ThreadingMixIn
 
-import dateutil.parser
+import dateutil.parser 
 
 ################################################################################
 #
@@ -235,6 +235,7 @@ def run(routes, host='0.0.0.0', port=8080):
     print('HTTP server started on port 8080')
     while True:
         from time import sleep
+        print('I am in the loop still')
         sleep(1)
     server.shutdown()
     server.start()
